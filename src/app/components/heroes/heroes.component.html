@@ -1,0 +1,12 @@
+<h1 class="display-6">Lista de Contactos</h1>
+
+
+<div *ngFor="let heroe of heroes;   let i = index" class="list-group list-group-flush col-2" style=" float: left;">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body" >
+          <h5 class="card-title">{{heroe.name}}, {{ heroe.gender }}</h5>
+          <p class="card-text">{{ heroe.description }}</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+</div>
